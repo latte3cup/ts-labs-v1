@@ -6,3 +6,18 @@
  */
 
 // TODO: StudentScore 타입 선언, scores 배열 생성, passed 계산
+type StudentScore = [string, number];
+
+const scores: StudentScore[] = [
+  ["jiyoon", 85],
+  ["taemin", 67],
+  ["suhyun", 90],
+];
+
+const passed: string[] = scores
+  .filter(([_, score]) => score >= 70)
+  .map(([name]) => name);
+
+// 결과 출력 (선택 사항)
+console.log("scores:", scores);
+console.log("passed:", passed);

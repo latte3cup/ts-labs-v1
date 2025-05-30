@@ -7,3 +7,12 @@
  */
 
 // TODO: users 배열 선언 및 위 조건 처리
+const users: string[] = ["eunji", "minsu", "sora"];
+
+const filteredUsers: string[] = users.filter((user) => user.length <= 4);
+
+const upperUsers: string[] = users.map((user) => user.toUpperCase());
+
+console.log("users:", users);
+console.log("filteredUsers:", filteredUsers);
+console.log("upperUsers:", upperUsers);
