@@ -16,3 +16,9 @@ const admin: AdminUser = {
 
 // 여기에 admin 객체 정보를 출력하는 코드를 작성하세요.
 // 예시: ID: 1, 이름: Alice, isAdmin: true, 권한: read,write,delete
+
+console.log(
+  `ID: ${admin.id}, 이름: ${admin.name}, isAdmin: ${
+    admin.isAdmin
+  }, 권한: ${admin.permissions.join(",")}`
+);
